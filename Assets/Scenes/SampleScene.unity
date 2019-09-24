@@ -1142,6 +1142,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &977656554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977656556}
+  - component: {fileID: 977656555}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977656555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977656554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ccb3189ac63a243a82eae4d3067db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 708974179}
+  spawnPoints:
+  - {fileID: 1283632296}
+  - {fileID: 400118656}
+  - {fileID: 760851132}
+  - {fileID: 1939163611}
+  - {fileID: 700339390}
+  - {fileID: 1543436803}
+  - {fileID: 325514152}
+  - {fileID: 129553234}
+  - {fileID: 476877478}
+  - {fileID: 535319797}
+  - {fileID: 439589093}
+  alien: {fileID: 344326049}
+--- !u!4 &977656556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977656554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.3686314, y: 19.05606, z: 7.468034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1066025763
 GameObject:
   m_ObjectHideFlags: 0

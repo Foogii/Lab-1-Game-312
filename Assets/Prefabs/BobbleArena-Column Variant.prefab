@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &6059713417269580263
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7206825270561239125}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.07, y: 5.25, z: 2}
-  m_Center: {x: 0, y: 2.66, z: 0}
 --- !u!208 &5313645916059793301
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -29,6 +16,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 2.3, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &6059713417269580263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7206825270561239125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.07, y: 5.25, z: 2}
+  m_Center: {x: 0, y: 2.66, z: 0}
 --- !u!1001 &7206825270561339125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39,6 +39,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
       propertyPath: m_Name
       value: BobbleArena-Column Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7efbd8df4f8f248a58d8a33c88abe034, type: 3}
       propertyPath: m_LocalPosition.x

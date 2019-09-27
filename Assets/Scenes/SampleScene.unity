@@ -964,6 +964,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 16384
+  bodyAnimator: {fileID: 1249870100}
 --- !u!143 &708974182
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1414,6 +1415,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1249870100 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: c4a4b574d23b6bc4a8b101a87e5797b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933719377}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283632296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1736,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c4a4b574d23b6bc4a8b101a87e5797b8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8a4e468fba70e8b439b3458b36bff83c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a4b574d23b6bc4a8b101a87e5797b8, type: 3}
 --- !u!4 &1933719378 stripped

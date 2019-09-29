@@ -1345,7 +1345,7 @@ GameObject:
   - component: {fileID: 4799500114210874927}
   - component: {fileID: 4799500114210874925}
   - component: {fileID: 4799500114210874924}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1742,7 @@ GameObject:
   - component: {fileID: 3009956827404811074}
   - component: {fileID: 6826794105405071003}
   - component: {fileID: 8192601388715859823}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BobbleEnemy-Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

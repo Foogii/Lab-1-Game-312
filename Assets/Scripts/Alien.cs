@@ -47,6 +47,7 @@ public class Alien : MonoBehaviour
        {
            Die();
            SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
+            Debug.Log(other.gameObject.name);
        }
     }
 
@@ -54,7 +55,8 @@ public class Alien : MonoBehaviour
     {
         isAlive = false;
         head.GetComponent<Animator>().enabled = false;
-        head.isKinematic = false; head.useGravity = true;
+        head.isKinematic = false;
+        head.useGravity = true;
         head.GetComponent<SphereCollider>().enabled = true;
         head.gameObject.transform.parent = null;
         head.velocity = new Vector3(0, 26.0f, 3.0f);

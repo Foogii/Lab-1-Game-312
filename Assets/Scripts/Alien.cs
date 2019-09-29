@@ -11,6 +11,9 @@ public class Alien : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
 
+    public Rigidbody head;
+    public bool isAlive = true;
+
 
     public float navigationUpdate;
     private float navigationTime = 0;
@@ -24,26 +27,41 @@ public class Alien : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        navigationTime += Time.deltaTime;
-
-        if (navigationTime > navigationUpdate)
+        if (isAlive)
         {
-            agent.destination = target.position;
-            navigationTime = 0;
+            navigationTime += Time.deltaTime;
+
+            if (navigationTime > navigationUpdate)
+            {
+                agent.destination = target.position;
+                navigationTime = 0;
+            }
         }
 
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Die();
-        SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
+       if(isAlive)
+       {
+           Die();
+           SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
+       }
     }
 
     public void Die()
     {
+        isAlive = false;
+        head.GetComponent<Animator>().enabled = false;
+        head.isKinematic = false; head.useGravity = true;
+        head.GetComponent<SphereCollider>().enabled = true;
+        head.gameObject.transform.parent = null;
+        head.velocity = new Vector3(0, 26.0f, 3.0f);
+
         onDestroy.Invoke();
         onDestroy.RemoveAllListeners();
+        SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
+        head.GetComponent<SelfDestruct>().Initiate();
         Destroy(gameObject);
     }
 

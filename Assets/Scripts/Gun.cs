@@ -34,6 +34,12 @@ public class Gun : MonoBehaviour
         {
             CancelInvoke("fireBullet"); //Cancels the invoke so the method is no longer being called
         }
+
+        currentTime += Time.deltaTime;
+        if(currentTime > upgradeTime && isUpgraded == true)
+        {
+            isUpgraded = false;
+        }
     }
 
     void fireBullet()

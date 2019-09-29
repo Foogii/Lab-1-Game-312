@@ -22,10 +22,13 @@ public class PlayerController : MonoBehaviour
 
     public Animator bodyAnimator;
 
+    private DeathParticles deathParticles;
+
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>(); //Gets a reference to the Character Controller component
+        deathParticles = gameObject.GetComponentInChildren<DeathParticles>();
     }
 
     // Update is called once per frame
@@ -120,6 +123,7 @@ public class PlayerController : MonoBehaviour
         head.transform.parent = null;
         head.useGravity = true;
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.marineDeath);
+        deathParticles.Activate();
         Destroy(gameObject);
     }
 
